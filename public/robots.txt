@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://control-color.vercel.app/sitemap.xml
