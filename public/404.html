@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <title>重定向中...</title>
+    <script>
+      const pathSegments = location.pathname.split('/').filter(Boolean);
+      const baseSegment = pathSegments[1] || '';
+      if (baseSegment) {
+        const restPath = '/' + pathSegments.slice(2).join('/');
+        location.href = '/' + baseSegment + restPath + location.search + location.hash;
+      }
+    </script>
+  </head>
+  <body></body>
+</html>
